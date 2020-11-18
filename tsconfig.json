@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "baseUrl": "./src",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "lib": ["ESNext", "DOM"],
+        "typeRoots": ["./__generated__/types", "./node_modules/@types"],
+        "jsx": "react",
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules"
+            }
+        ]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["./node_modules/", "./src/node_modules/", "./__sapper__/"]
+}

@@ -1,0 +1,47 @@
+@import "vars";
+
+.project {
+    padding-top: 56px;
+
+    @media #{$mobileQuery} {
+        padding-top: 32px;
+        text-align: center;
+    }
+
+    @media #{$smallDesktopQuery} {
+        overflow: visible;
+    }
+
+    &__previews {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media #{$smallDesktopQuery} {
+            width: max-content;
+        }
+
+        * {
+            margin-bottom: 48px;
+            width: 350px;
+            height: 235px;
+
+            @media #{$smallDesktopQuery} {
+                &:not(:first-child) {
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__description {
+        font-size: 18px;
+    }
+}

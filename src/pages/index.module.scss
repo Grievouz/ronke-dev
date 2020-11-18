@@ -1,0 +1,19 @@
+@import "vars";
+
+.index {
+    padding: 16px;
+    max-width: 1194px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    &__hmu {
+        font-size: 18px;
+        padding: 128px 0 32px 0;
+        font-weight: 500;
+
+        @media #{$mobileQuery} {
+            padding: 64px 0 16px 0;
+            text-align: center;
+        }
+    }
+}

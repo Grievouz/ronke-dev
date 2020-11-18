@@ -1,0 +1,32 @@
+@import "vars";
+
+.about {
+    padding-top: 88px;
+
+    @media #{$mobileQuery} {
+        padding-top: 32px;
+    }
+
+    &__name {
+        font-family: "Domine";
+        line-height: 100%;
+        font-weight: 500;
+        font-size: 100px;
+
+        @media #{$mobileQuery} {
+            font-size: 60px;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 170%;
+        width: 710px;
+        padding-top: 20px;
+
+        @media #{$mobileQuery} {
+            font-size: 16px;
+            width: initial;
+        }
+    }
+}
