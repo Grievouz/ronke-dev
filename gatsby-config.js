@@ -8,8 +8,9 @@ module.exports = {
         author: "Tammo Ronke <tammo@ronke.dev>",
     },
     plugins: [
+        "gatsby-plugin-netlify-cache",
         {
-            resolve: `gatsby-plugin-webfonts`,
+            resolve: "gatsby-plugin-webfonts",
             options: {
                 fonts: {
                     google: [
