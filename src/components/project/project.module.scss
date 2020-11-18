@@ -1,10 +1,10 @@
 @import "vars";
 
 .project {
-    padding-top: 56px;
+    padding-top: 80px;
 
     @media #{$mobileQuery} {
-        padding-top: 32px;
+        padding-top: 64px;
         text-align: center;
     }
 
@@ -23,8 +23,8 @@
             width: max-content;
         }
 
-        * {
-            margin-bottom: 48px;
+        > * {
+            margin-bottom: 32px;
             width: 350px;
             height: 235px;
 
