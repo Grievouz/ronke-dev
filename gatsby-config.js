@@ -10,6 +10,14 @@ module.exports = {
     plugins: [
         "gatsby-plugin-netlify-cache",
         {
+            resolve: "gatsby-plugin-breakpoints",
+            options: {
+                queries: {
+                    mobile: "only screen and (max-width: 800px)",
+                },
+            },
+        },
+        {
             resolve: "gatsby-plugin-webfonts",
             options: {
                 fonts: {

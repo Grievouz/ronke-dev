@@ -12,6 +12,23 @@
         overflow: visible;
     }
 
+    &__preview {
+        margin-bottom: 32px;
+        width: 350px;
+        height: 235px;
+
+        @media #{$smallDesktopQuery} {
+            &:not(:first-child) {
+                margin-left: 24px;
+            }
+        }
+    }
+
+    &__previewWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
     &__previews {
         list-style: none;
         display: flex;
@@ -22,18 +39,6 @@
         @media #{$smallDesktopQuery} {
             width: max-content;
         }
-
-        > * {
-            margin-bottom: 32px;
-            width: 350px;
-            height: 235px;
-
-            @media #{$smallDesktopQuery} {
-                &:not(:first-child) {
-                    margin-left: 24px;
-                }
-            }
-        }
     }
 
     &__title {
@@ -43,5 +48,38 @@
 
     &__description {
         font-size: 18px;
+    }
+
+    &__carousel {
+        position: relative;
+        margin-bottom: 32px;
+        height: 235px;
+    }
+
+    &__next,
+    &__back {
+        z-index: 10;
+        position: absolute;
+        top: 105px;
+        border: none;
+        background: none;
+        outline: none;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    &__back {
+        left: 0;
+
+        img {
+            transform: scaleX(-1);
+        }
+    }
+
+    &__next {
+        right: 0;
     }
 }

@@ -224,19 +224,19 @@ const IndexPage = () => {
                 <Project
                     previews={[
                         {
-                            fluid:
-                                data.orbiteerPlanetImage.childImageSharp.fluid,
+                            video: data.orbiteerGameplayTwoVideo,
                         },
                         {
-                            video: data.orbiteerGameplayTwoVideo,
+                            video: data.orbiteerGameplayOneVideo,
+                        },
+                        {
+                            fluid:
+                                data.orbiteerPlanetImage.childImageSharp.fluid,
                         },
                         {
                             fluid:
                                 data.orbiteerSatelliteImage.childImageSharp
                                     .fluid,
-                        },
-                        {
-                            video: data.orbiteerGameplayOneVideo,
                         },
                     ]}
                     name={"Orbiteer"}
