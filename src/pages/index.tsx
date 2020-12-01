@@ -217,7 +217,7 @@ const IndexPage = () => {
                     name={"Campusjäger"}
                     href={"https://www.campusjaeger.de/"}
                     title={
-                        "A recruiting platform, Backend Developer, 2018 - 2019"
+                        "A recruiting platform, Frontend Developer, 2018 - 2019"
                     }
                     description={null}
                 />
